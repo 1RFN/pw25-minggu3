@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permintaan Cerita Mitologi</title>
+    <link rel="stylesheet" href="styleRequest.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Request Cerita Mitologi</h1>
+        <form action="#notification" method="get" autocomplete="off">
+            <label for="nama">Nama Anda:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" value="">
+            <label for="email">Email Anda:</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda" value="">
+            <label for="mitologi">Jenis Mitologi:</label>
+            <select id="mitologi" name="mitologi">
+                <option value="mesir">Mitologi Mesir</option>
+                <option value="yunani">Mitologi Yunani</option>
+                <option value="nordik">Mitologi Nordik</option>
+                <option value="lainnya">Lainnya</option>
+            </select>
+            <label for="cerita">Judul atau Topik Cerita:</label>
+            <input type="text" id="cerita" name="cerita" placeholder="Masukkan judul atau topik cerita" value="">
+            <label for="pesan">Deskripsi Permintaan Anda:</label>
+            <textarea id="pesan" name="pesan" rows="5" placeholder="Ceritakan detail yang Anda inginkan..."></textarea>
+            <button type="submit">Kirim Permintaan</button>
+        </form>
+        <div id="notification" class="notification">
+            <h4>Request mu telah diterima</h4>
+            <p>Permintaan Anda berhasil dikirim!</p>
+            <a href="beranda.html" class="request-button">Kembali</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Gaya untuk keseluruhan halaman */
+body {
+    font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+
+/* Latar Belakang */
+.background {
+    min-height: 100vh;
+    background: url('latar3.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Konten utama dengan teks */
+.content {
+    text-align: center;
+    padding: 16vh 0 5vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.content h1 {
+    font-size: 3em;
+    margin: 0;
+    color: white;
+}
+
+.content p {
+    font-size: 1.2em;
+    margin-top: 0;
+    color: white;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background: linear-gradient(to right, #1A237E, #FFD700);
+    padding: 20px;
+    opacity: 0.8;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Tabel */
+table {
+    margin: 0 auto 50px;
+    border-collapse: collapse;
+    width: 70%;
+    max-width: 1200px;
+    background-color: white;
+}
+
+table th, table td {
+    border: 1px solid #2a2b85;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+table th {
+    background-color: #2a2b85;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table a {
+    color: #2a2b85;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    color: #406ac4;
+}
+
+/* Section */
+section {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+section h2 {
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: linear-gradient(to right, #1A237E, #FFD700);
+    padding: 10px 0;
+}
+
+/* Gaya untuk Tombol */
+.button {
+    display: inline-block;
+    background-color: #2a2b85;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #406ac4;
+    transform: scale(1.05);
+}
+
+.request-button {
+    margin: 20px auto;
+    display: inline-block;
+    text-align: center;
+}

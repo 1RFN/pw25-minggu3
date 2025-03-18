@@ -1,0 +1,86 @@
+/* Menghilangkan margin dan padding default */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Latar belakang utama */
+.background {
+    position: relative;
+    min-height: 120vh;
+    background: url('latar3.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Latar putih tempat cerita */
+.content-container {
+    width: 80%;
+    max-width: 1000px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Mengatur teks */
+.text {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Mengatur judul */
+h1 {
+    text-align: center;
+    margin: 15px 0 20px;
+    font-size: 32px;
+}
+
+/* Gambar dalam teks */
+.image-container img {
+    float: right;
+    width: 40%;
+    max-width: 300px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+/* Layout responsif */
+@media (max-width: 768px) {
+    .image-container img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px;
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+/* Gaya untuk Tombol */
+.button {
+    display: inline-block;
+    background-color: #2a2b85;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #406ac4;
+    transform: scale(1.05);
+}
+
+.request-button {
+    margin: 20px auto;
+    display: inline-block;
+    text-align: center;
+}
